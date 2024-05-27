@@ -18,8 +18,13 @@ class LoginPageController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var mainView: UIView!
     
-    var viewModel: LoginPageController!
+    var viewModel: LoginPageControllerProtocol!
     override func viewDidLoad() {
+        self.viewModel = LoginViewModel(view: self)
         
     }
+}
+
+extension LoginPageController: LoginViewModelProtocol{
+    
 }
