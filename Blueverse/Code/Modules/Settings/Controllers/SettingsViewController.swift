@@ -15,7 +15,7 @@ class SettingsViewController: UIViewController, ProfileTableViewCellDegate, Pass
     
     
     var disposable = CompositeDisposable([])
-   
+    
     
     
     var profileDataVal = [
@@ -74,17 +74,17 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         if isOutletSubscriptionMode {
             return 1}
         else {
-                switch section {
-                case 0:
-                    return 1
-                case 1:
-                    return isEditingProfile ? 1:profileDataVal.count
-                case 2:
-                    return isChangePassword ? 1 : 1
-                default:
-                    return 0
-                }
+            switch section {
+            case 0:
+                return 1
+            case 1:
+                return isEditingProfile ? 1:profileDataVal.count
+            case 2:
+                return isChangePassword ? 1 : 1
+            default:
+                return 0
             }
+        }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         if isOutletSubscriptionMode {
@@ -94,8 +94,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
             // Configure KYC cell
             return cell
             
-        }
-        else{
+        } else {
             switch indexPath.section {
             case 0:
                 if indexPath.row == 0 {
@@ -129,8 +128,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
                     }
                     cell.delegate = self
                     return cell
-                }
-                else{
+                } else {
                     if indexPath.row == 0 {
                         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PasswordTableViewCell", for: indexPath) as? PasswordTableViewCell else {
                             return UITableViewCell()
@@ -139,12 +137,12 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
                         return cell
                     }
                 }
-                default:
-                    return UITableViewCell()
-                }
+            default:
                 return UITableViewCell()
             }
+            return UITableViewCell()
         }
+    }
     
     
     func didTapEditButton(in cell: ProfileTableViewCell) {
@@ -162,15 +160,8 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.reloadData()
     }
     func didTapCancelButton(in cell: EditProfileTableViewCell) {
-            isEditingProfile = false
-            tableView.reloadData()
-        }
-
+        isEditingProfile = false
+        tableView.reloadData()
+    }
+    
 }
-//
-//extension SettingsViewController {
-//    
-//    let fetchMachinesAction = Action {(email: String, password: String, app: String) -> SignalProducer<Bool, ModelError> in
-//        return User.updateProfil`e(email: String, password: String, app: String)
-//    }
-//}

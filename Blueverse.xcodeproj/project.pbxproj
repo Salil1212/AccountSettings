@@ -12,6 +12,13 @@
 		71225B0D2C048FB8002EC2C5 /* User+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B0C2C048FB8002EC2C5 /* User+API.swift */; };
 		71225B0F2C049433002EC2C5 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B0E2C049433002EC2C5 /* LoginPage.swift */; };
 		71225B112C0494BC002EC2C5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B102C0494BC002EC2C5 /* LoginViewModel.swift */; };
+		71225B152C04C140002EC2C5 /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B142C04C140002EC2C5 /* TasksListViewController.swift */; };
+		71225B172C04C2DB002EC2C5 /* TaskCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B162C04C2DB002EC2C5 /* TaskCellModel.swift */; };
+		71225B1A2C04C309002EC2C5 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B182C04C309002EC2C5 /* TaskCell.swift */; };
+		71225B1B2C04C309002EC2C5 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71225B192C04C309002EC2C5 /* TaskCell.xib */; };
+		71225B1D2C04C3F9002EC2C5 /* TasksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B1C2C04C3F9002EC2C5 /* TasksListViewModel.swift */; };
+		71225B1F2C04C457002EC2C5 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B1E2C04C457002EC2C5 /* SectionModel.swift */; };
+		71225B212C04C532002EC2C5 /* TasksHeaderCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71225B202C04C532002EC2C5 /* TasksHeaderCellModel.swift */; };
 		71C8FBD32BFF5836003C2D49 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C8FBD22BFF5836003C2D49 /* ModelError.swift */; };
 		71C8FBD52BFF5876003C2D49 /* UserUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C8FBD42BFF5876003C2D49 /* UserUpdate.swift */; };
 		71C8FBD72BFF5996003C2D49 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C8FBD62BFF5996003C2D49 /* UserRouter.swift */; };
@@ -38,7 +45,6 @@
 		71DF462A2C005C140089C2BF /* LoginCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF46292C005C140089C2BF /* LoginCellModel.swift */; };
 		71DF462D2C005CDE0089C2BF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DF462C2C005CDE0089C2BF /* Login.storyboard */; };
 		71DF462F2C005D420089C2BF /* LoginPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF462E2C005D420089C2BF /* LoginPageController.swift */; };
-		71DF46772C00B53C0089C2BF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF46762C00B53C0089C2BF /* LoginViewModel.swift */; };
 		8021132229D81CFF0061E89A /* UIViewController+Biometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021132129D81CFF0061E89A /* UIViewController+Biometric.swift */; };
 		8021132529D81D2F0061E89A /* BiometricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021132429D81D2F0061E89A /* BiometricManager.swift */; };
 		804714EF29D8089F00B0E30F /* String+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804714EE29D8089F00B0E30F /* String+Helper.swift */; };
@@ -129,6 +135,13 @@
 		71225B0C2C048FB8002EC2C5 /* User+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+API.swift"; sourceTree = "<group>"; };
 		71225B0E2C049433002EC2C5 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		71225B102C0494BC002EC2C5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		71225B142C04C140002EC2C5 /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
+		71225B162C04C2DB002EC2C5 /* TaskCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellModel.swift; sourceTree = "<group>"; };
+		71225B182C04C309002EC2C5 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		71225B192C04C309002EC2C5 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		71225B1C2C04C3F9002EC2C5 /* TasksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewModel.swift; sourceTree = "<group>"; };
+		71225B1E2C04C457002EC2C5 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		71225B202C04C532002EC2C5 /* TasksHeaderCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksHeaderCellModel.swift; sourceTree = "<group>"; };
 		71C8FBD22BFF5836003C2D49 /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
 		71C8FBD42BFF5876003C2D49 /* UserUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdate.swift; sourceTree = "<group>"; };
 		71C8FBD62BFF5996003C2D49 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
@@ -155,7 +168,6 @@
 		71DF46292C005C140089C2BF /* LoginCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCellModel.swift; sourceTree = "<group>"; };
 		71DF462C2C005CDE0089C2BF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		71DF462E2C005D420089C2BF /* LoginPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageController.swift; sourceTree = "<group>"; };
-		71DF46762C00B53C0089C2BF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8021132129D81CFF0061E89A /* UIViewController+Biometric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Biometric.swift"; sourceTree = "<group>"; };
 		8021132429D81D2F0061E89A /* BiometricManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricManager.swift; sourceTree = "<group>"; };
 		804714EE29D8089F00B0E30F /* String+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helper.swift"; sourceTree = "<group>"; };
@@ -293,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				71225B102C0494BC002EC2C5 /* LoginViewModel.swift */,
+				71225B1C2C04C3F9002EC2C5 /* TasksListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -301,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				71D8CF3F2BFCB2B700D5AFFC /* ProfileData.swift */,
+				71225B162C04C2DB002EC2C5 /* TaskCellModel.swift */,
+				71225B202C04C532002EC2C5 /* TasksHeaderCellModel.swift */,
 			);
 			path = CellModels;
 			sourceTree = "<group>";
@@ -311,6 +326,7 @@
 				71D8CF422BFCB2B700D5AFFC /* Outlet & Subscription Controller.swift */,
 				71D8CF432BFCB2B700D5AFFC /* SettingsViewController.swift */,
 				71225B0E2C049433002EC2C5 /* LoginPage.swift */,
+				71225B142C04C140002EC2C5 /* TasksListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -331,6 +347,8 @@
 				71D8CF5E2BFCBDAF00D5AFFC /* EditProfileTableViewCell.xib */,
 				71D8CF632BFCD68200D5AFFC /* ChangePasswordTableViewCell.swift */,
 				71D8CF642BFCD68200D5AFFC /* ChangePasswordTableViewCell.xib */,
+				71225B182C04C309002EC2C5 /* TaskCell.swift */,
+				71225B192C04C309002EC2C5 /* TaskCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,7 +391,6 @@
 		71DF46282C005B6E0089C2BF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				71DF46762C00B53C0089C2BF /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -555,6 +572,7 @@
 				8021132329D81D1C0061E89A /* Biometric */,
 				8088675C29D822B3007C3CC8 /* LocalNotification */,
 				8088676329D8238C007C3CC8 /* DateHelpers */,
+				71225B1E2C04C457002EC2C5 /* SectionModel.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -779,6 +797,7 @@
 				71D8CF5A2BFCB2B700D5AFFC /* PasswordTableViewCell.xib in Resources */,
 				E33D6E3521BFC21D00A3A174 /* LaunchScreen.storyboard in Resources */,
 				71D8CF582BFCB2B700D5AFFC /* OutletSubscriptionTableViewCell.xib in Resources */,
+				71225B1B2C04C309002EC2C5 /* TaskCell.xib in Resources */,
 				E33D6E3421BFC21D00A3A174 /* Assets.xcassets in Resources */,
 				E33D6E3621BFC21D00A3A174 /* Main.storyboard in Resources */,
 				71D8CF662BFCD68200D5AFFC /* ChangePasswordTableViewCell.xib in Resources */,
@@ -894,9 +913,11 @@
 				E33D6E3821BFC21D00A3A174 /* ViewController.swift in Sources */,
 				8088676229D82389007C3CC8 /* Date+Helper.swift in Sources */,
 				71D8CF502BFCB2B700D5AFFC /* Outlet & Subscription Controller.swift in Sources */,
+				71225B1D2C04C3F9002EC2C5 /* TasksListViewModel.swift in Sources */,
 				E33D6E5A21BFC49600A3A174 /* TableViewCell.swift in Sources */,
 				E33D6E0C21BFC08900A3A174 /* Logging.swift in Sources */,
 				8021132529D81D2F0061E89A /* BiometricManager.swift in Sources */,
+				71225B1F2C04C457002EC2C5 /* SectionModel.swift in Sources */,
 				E33D6E4921BFC21D00A3A174 /* Configuration.swift in Sources */,
 				71D8CF542BFCB2B700D5AFFC /* ProfileTableViewCell.swift in Sources */,
 				71D8CF532BFCB2B700D5AFFC /* OutletSubscriptionTableViewCell.swift in Sources */,
@@ -910,21 +931,24 @@
 				8047150029D810DF00B0E30F /* FontHelper.swift in Sources */,
 				71D8CF652BFCD68200D5AFFC /* ChangePasswordTableViewCell.swift in Sources */,
 				E33D6E4021BFC21D00A3A174 /* UIView+Helper.swift in Sources */,
-				71DF46772C00B53C0089C2BF /* LoginViewModel.swift in Sources */,
 				E33D6E5B21BFC49600A3A174 /* CollectionViewCell.swift in Sources */,
 				E33D6E4621BFC21D00A3A174 /* Fonts.swift in Sources */,
 				804714F929D80F3000B0E30F /* OTPTextField.swift in Sources */,
+				71225B1A2C04C309002EC2C5 /* TaskCell.swift in Sources */,
 				71225B0F2C049433002EC2C5 /* LoginPage.swift in Sources */,
 				E33D6E4821BFC21D00A3A174 /* NavigationItem.swift in Sources */,
 				E33D6E3F21BFC21D00A3A174 /* UITextField+Helper.swift in Sources */,
 				E33D6E3C21BFC21D00A3A174 /* NavigationBar.swift in Sources */,
 				E33D6E5521BFC47900A3A174 /* Loader.swift in Sources */,
 				71D8CF4E2BFCB2B700D5AFFC /* ProfileData.swift in Sources */,
+				71225B172C04C2DB002EC2C5 /* TaskCellModel.swift in Sources */,
 				804714FC29D80F9B00B0E30F /* FontType.swift in Sources */,
+				71225B212C04C532002EC2C5 /* TasksHeaderCellModel.swift in Sources */,
 				804714EF29D8089F00B0E30F /* String+Helper.swift in Sources */,
 				E33D6E4121BFC21D00A3A174 /* AppUtility.swift in Sources */,
 				804714FE29D8106A00B0E30F /* AppFont.swift in Sources */,
 				71D8CF512BFCB2B700D5AFFC /* SettingsViewController.swift in Sources */,
+				71225B152C04C140002EC2C5 /* TasksListViewController.swift in Sources */,
 				71D8CF522BFCB2B700D5AFFC /* PasswordTableViewCell.swift in Sources */,
 				E33D6E3B21BFC21D00A3A174 /* UIViewController+Helper.swift in Sources */,
 				E33D6E3721BFC21D00A3A174 /* Constants.swift in Sources */,
