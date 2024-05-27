@@ -11,7 +11,7 @@ import UIKit
 import ReactiveSwift
 import Model
 
-class SettingsViewController: UIViewController, ProfileTableViewCellDegate, PasswordTableViewCellDelegate, ChangePasswordTableViewCellDelegate,EditProfileTableViewCellDelegate {
+class SettingsViewController: UIViewController, ProfileTableViewCellDegate, PasswordTableViewCellDelegate, ChangePasswordTableViewCellDelegate, EditProfileTableViewCellDelegate {
     
     
     var disposable = CompositeDisposable([])
